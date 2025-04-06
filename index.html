@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Castilho - Portfólio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+
+<body>
+
+    <!-- começo navbar -->
+    <nav>
+        <div class="navbar">
+            <div class="esquerda">
+                <a href="#home">
+                    <h1>Victor < />
+                    </h1>
+                </a>
+            </div>
+            <div class="direita">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#sobre">SOBRE</a></li>
+                    <li><a href="#experiencias">EXPERIÊNCIAS</a></li>
+                    <li><a href="#projetos">PROJETOS</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- começo home -->
+    <header>
+        <div class="home" id="home">
+            <div class="esquerdaHom">
+                <h5>Olá, eu sou</h5>
+                <h3>Victor Castilho</h3>
+                <h5>Desenvolvedor Front-End</h5>
+                <div class="ctts">
+                    <a href="https://www.linkedin.com/in/victor-castilho-536697304/">
+                        <button>LINKEDIN</button>
+                    </a>
+                    <a href="https://github.com/02vic02">
+                        <button>GITHUB</button>
+                    </a>
+                </div>
+            </div>
+            <div class="direitaHom">
+                <img src="images/novo_portifolio.png" alt="Desenvolvedor Icon">
+            </div>
+        </div>
+    </header>
+
+    <!-- começo sobre mim -->
+    <section class="sobre" id="sobre">
+        <img src="images/victor.jpg" alt="Victor Castilho imagem">
+        <div class="info">
+            <h2>SOBRE MIM</h2>
+            <h3>São Paulo, SP</h3>
+            <p>Meu nome é Victor Castilho de Lima Souza, tenho 18 anos e atualmente estou cursando
+                Técnico de Desenvolvimento de Sistemas na ETEC - Centro Paula Souza. Sou nascido e
+                crescido em São Paulo, Zona Norte. Tenho certificações em: Excel intermediário,
+                Fundamentos de TI, Educomunicação e Inglês.
+            </p>
+            <h2>victorcastilhow@gmail.com</h2>
+            <a href="Currículo_VictorCastilho.pdf" download>
+                <button><img src="images/icons8-baixar-50(1).png" alt="download">Currículo</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- começo experiencias profissionais -->
+    <section class="experiencias" id="experiencias">
+        <h1>Experiências</h1>
+        <div class="experiencias-container">
+            <div class="experiencias-sidebar">
+                <div id="exp1-btn" onclick="showExperience('exp1')">Experiência 1</div>
+                <div id="exp2-btn" onclick="showExperience('exp2')">Experiência 2</div>
+                <div id="exp3-btn" onclick="showExperience('exp3')">Experiência 3</div>
+            </div>
+            <article class="experiencias-content">
+                <h2 id="exp-titulo">Estágio na Companhia de Engenharia de Tráfego (CET) - Universidade corporativa</h2>
+                <p id="exp-data">06/2022 - 10/2023</p>
+                <p id="exp-descricao">Estagiei durante 1 ano e 4 meses na Companhia de Engenharia de Tráfego (CET),
+                    no setor da Gerencia da universidade Coorporativa. Eu fazia parte da pesquisa qualitativa e
+                    desenvolvia atividades como: organizar materiais, apostilas e equipamentos utilizados em atividades
+                    educacionais, efetuar preenchimento de formulários, fazer tabulação on-line e desenvolver planilhas
+                    digitais.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <!-- começo projetos desenvolvidos -->
+    <section class="projetos" id="projetos">
+        <h1>Projetos</h1>
+        <div class="boxProjetos">
+            <div class="box">
+                <a href="https://github.com/02vic02/fintech_victor">
+                    <img src="images/fintech.png" alt="Imagem do projeto Fintech">
+                    <h5>Projeto Web - Fintech</h5>
+                    <button>Ver no GitHub</button>
+                </a>
+            </div>
+            <div class="box">
+                <a href="https://github.com/02vic02/previsaodotempo_1ds">
+                    <img src="images/previsaoDoTempo.png" alt="Imagem do projeto Previsão do Tempo">
+                    <h5>Projeto Web - Previsão do tempo</h5>
+                    <button>Ver no GitHub</button>
+                </a>
+            </div>
+            <div class="box">
+                <a href="#projetos">
+                    <img src="images/techBit.png" alt="Imagem do projeto TechBit">
+                    <h5>Projeto Web - TechBit-MV</h5>
+                    <button>Em breve</button>
+                </a>
+            </div>
+            <div class="box">
+                <a href="#projetos">
+                    <img src="images/admTechbit.png" alt="Imagem em breve">
+                    <h5>Projeto Mobile - Adm TechBit-MV</h5>
+                    <button>Em breve</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <a href="https://wa.me/5511945342456" class="whatsapp-button" target="_blank" title="Fale conosco no WhatsApp">
+        <img src="images/iconswhatsapp-48.png" alt="WhatsApp" />
+    </a>
+</body>
+
+</html>

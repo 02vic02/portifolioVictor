@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+}
+
+/* começo navbar */
+.navbar {
+    width: 100%;
+    height: 105px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #313131;
+    color: #fff;
+    position: fixed;
+}
+
+.navbar .esquerda {
+    width: 400px;
+    height: 190px;
+    padding-top: 25px;
+}
+
+.navbar .esquerda h1 {
+    color: #fff;
+}
+
+.navbar .esquerda h1:hover {
+    color: #00CF08;
+    transition: 0.5s ease-in-out;
+}
+
+.navbar .esquerda h1 {
+    padding: 50px;
+    padding-left: 110px;
+    font-size: 40px;
+}
+
+.navbar .direita ul {
+    display: flex;
+    gap: 50px;
+    padding: 50px;
+    padding-right: 110px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.navbar .direita ul li a {
+    color: #fff;
+}
+
+.navbar .direita ul li a:hover {
+    color: #00CF08;
+    transition: 0.5s ease-in-out;
+}
+
+/* começo home section */
+.home {
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: black;
+    color: white;
+    padding-top: 150px;
+}
+
+.home .esquerdaHom {
+    width: 50%;
+    height: 700px;
+    padding: 150px;
+}
+
+.home .esquerdaHom h5 {
+    font-size: 30px;
+    font-family: "Roboto Slab", serif;
+}
+
+.home .esquerdaHom h3 {
+    font-size: 40px;
+}
+
+.home .esquerdaHom .ctts {
+    display: flex;
+    gap: 150px;
+}
+
+.home .esquerdaHom button {
+    background-color: #00CF08;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin-top: 30px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.home .esquerdaHom button:hover {
+    background-color: #009d05;
+    transition: 0.5s ease-in-out;
+}
+
+.home .direitaHom {
+    width: 50%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* começo sobre mim */
+.sobre {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    padding: 50px;
+}
+
+.sobre img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.sobre .info {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sobre .info h2,
+.sobre .info h3,
+.sobre .info h5,
+p {
+    color: #fff;
+}
+
+.sobre .info button {
+    width: 150px;
+    height: 50px;
+    background-color: #00CF08;
+    border: none;
+    font-size: 20px;
+    justify-content: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sobre .info button img {
+    width: 35px;
+    height: 35px;
+}
+
+.sobre .info button:hover {
+    background-color: #009d05;
+    transition: 0.5s ease-in-out;
+}
+
+/* começo experiencias*/
+.experiencias {
+    height: 700px;
+    padding-top: 200px;
+    justify-content: center;
+}
+
+.experiencias h1 {
+    color: #fff;
+    padding-left: 250px;
+}
+
+.experiencias-container {
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding-top: 20px;
+}
+
+.experiencias-sidebar {
+    width: 350px;
+    height: 250px;
+    background-color: #333;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.experiencias-sidebar div {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #444;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.experiencias-sidebar div:hover {
+    background-color: #009d05;
+}
+
+.experiencias-sidebar .highlight {
+    background-color: #00CF08;
+}
+
+.experiencias-content {
+    flex-grow: 1;
+    padding: 20px;
+    max-width: 600px;
+}
+
+.experiencias-content h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.experiencias-content p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+/* começo projetos */
+.projetos {
+    width: 100%;
+    height: 700px;
+    padding: 50px;
+    text-align: center;
+}
+
+.projetos h1 {
+    margin-top: 100px;
+    color: #fff;
+}
+
+.projetos .boxProjetos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.projetos .boxProjetos .box {
+    width: 500px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: #6A6969;
+}
+
+.projetos .boxProjetos img {
+    width: 500px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.projetos .boxProjetos .box h5 {
+    color: #fff;
+    padding-top: 5px;
+}
+
+.projetos .boxProjetos .box button {
+    width: 150px;
+    height: 30px;
+    background-color: #00CF08;
+    border: none;
+    padding: 5px;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.projetos .boxProjetos .box button:hover {
+    background-color: #009d05;
+    transition: 0.5s ease-in-out;
+}
+
+/* botao do wpp */
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+    background-color: #25D366;
+    border-radius: 100%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-button img {
+    width: 40px;
+    height: 40px;
+}
