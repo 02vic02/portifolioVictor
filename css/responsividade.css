@@ -1,0 +1,138 @@
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .direita {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #111;
+        position: absolute;
+        top: 105px;
+        right: 0;
+        width: 100%;
+        padding: 20px 0;
+        z-index: 100;
+    }
+
+    .direita.active {
+        display: flex;
+    }
+
+    .direita ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .home {
+        flex-direction: column;
+        padding: 100px 20px 0 20px;
+        text-align: center;
+    }
+
+    .home .esquerdaHom {
+        width: 100%;
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    .home .esquerdaHom .ctts {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .home .direitaHom {
+        display: none;
+    }
+
+    .sobre {
+        flex-direction: column;
+        height: auto;
+        gap: 40px;
+    }
+
+    .projetos {
+        height: auto;
+    }
+
+    .projetos .boxProjetos {
+        gap: 50px;
+        flex-direction: column;
+    }
+
+    .experiencias {
+        padding: 100px 20px;
+        height: auto;
+    }
+
+    .experiencias-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .esquerda h1 {
+        font-size: 28px;
+        padding-left: 20px;
+    }
+
+    .direita ul {
+        font-size: 16px;
+        gap: 15px;
+    }
+
+    .home .esquerdaHom h5 {
+        font-size: 20px;
+    }
+
+    .home .esquerdaHom h3 {
+        font-size: 28px;
+    }
+
+    .home .esquerdaHom .ctts {
+        gap: 20px;
+    }
+
+    .home .esquerdaHom button {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+
+    .home .direitaHom {
+        display: none;
+    }
+
+    .sobre img {
+        width: 200px;
+    }
+
+    .projetos .boxProjetos .box,
+    .projetos .boxProjetos img {
+        width: 300px;
+        height: auto;
+    }
+
+    .experiencias h1 {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .experiencias-sidebar {
+        width: 90%;
+    }
+
+    .experiencias-content {
+        padding: 10px;
+    }
+}
